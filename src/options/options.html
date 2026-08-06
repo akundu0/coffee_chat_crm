@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coffee Chat CRM — Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="options">
+      <h1>Coffee Chat CRM</h1>
+      <p class="lede">
+        Your data stays on this device in <code>chrome.storage.local</code> — nothing is sent to a
+        server this extension controls. Connecting Gmail below only grants read access to your own
+        inbox, scoped to messages with people already in your contact list.
+      </p>
+
+      <section>
+        <h2>Gmail</h2>
+        <p id="gmail-status" class="status">Not connected.</p>
+        <button id="connect-btn" class="primary-btn">Connect Gmail</button>
+        <button id="disconnect-btn" class="secondary-btn" hidden>Disconnect</button>
+      </section>
+
+      <section>
+        <h2>Data</h2>
+        <button id="export-btn" class="secondary-btn">Export contacts as JSON</button>
+        <button id="clear-btn" class="danger-btn">Clear all data</button>
+      </section>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

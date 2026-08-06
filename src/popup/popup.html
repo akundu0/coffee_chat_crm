@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coffee Chat CRM</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <header class="app-header">
+        <div class="app-header__title">
+          <span class="app-header__mark">&#9737;</span>
+          <h1>Coffee Chat CRM</h1>
+        </div>
+        <div class="app-header__actions">
+          <button id="sync-gmail-btn" class="icon-btn" title="Sync Gmail now">&#8635;</button>
+          <a id="options-link" class="icon-btn" title="Settings" href="../options/options.html" target="_blank" rel="noopener">&#9881;</a>
+        </div>
+      </header>
+
+      <div class="tabs" role="tablist">
+        <button class="tab tab--active" id="tab-followups" data-tab="followups">Follow-ups <span id="followup-count" class="badge"></span></button>
+        <button class="tab" id="tab-all" data-tab="all">All contacts</button>
+      </div>
+
+      <input id="search-input" class="search-input" type="search" placeholder="Search by name or company&hellip;" />
+
+      <main id="list-view" class="list-view">
+        <ul id="contact-list" class="contact-list"></ul>
+        <p id="empty-state" class="empty-state" hidden>
+          No contacts yet. Open a LinkedIn conversation and click
+          <strong>Log this contact</strong>, or add one manually below.
+        </p>
+      </main>
+
+      <button id="add-manual-btn" class="secondary-btn">+ Add contact manually</button>
+
+      <section id="detail-view" class="detail-view" hidden>
+        <button id="back-btn" class="link-btn">&larr; Back</button>
+        <div id="detail-content"></div>
+      </section>
+
+      <p id="status-line" class="status-line" aria-live="polite"></p>
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

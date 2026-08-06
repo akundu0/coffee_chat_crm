@@ -1,0 +1,33 @@
+.coffee-chat-crm-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+}
+
+.coffee-chat-crm-button {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #2e7d6b;
+  background: #2e7d6b;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.coffee-chat-crm-button:hover {
+  background: #256355;
+  border-color: #256355;
+}
+
+.coffee-chat-crm-status {
+  font-size: 12px;
+  color: #2e7d6b;
+}
+
+.coffee-chat-crm-status--error {
+  color: #b3432b;
+}
