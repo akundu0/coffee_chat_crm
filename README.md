@@ -1,6 +1,6 @@
 # Coffee Chat CRM
 
-[![CI](https://github.com/akundu0/coffee-chat-crm/actions/workflows/ci.yml/badge.svg)](https://github.com/akundu0/coffee-chat-crm/actions/workflows/ci.yml)
+[![CI](https://github.com/akundu0/coffee_chat_crm/actions/workflows/ci.yml/badge.svg)](https://github.com/akundu0/coffee_chat_crm/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A Chrome extension that turns scattered LinkedIn coffee chats and networking
@@ -111,8 +111,8 @@ to `chrome.*` APIs and the DOM — which is also why the test suite can cover
 | Testing | Jest + jsdom + Babel | ES modules in tests without a bundler |
 | Linting | ESLint (flat config) | Catches unused vars, `var` usage, loose equality |
 | CI | GitHub Actions | Lint + test + manifest validation on every push/PR, matrix-tested on Node 18 and 20 |
-<details>
-<summary><strong>Getting started + Setup</strong></summary>
+
+## Getting started
 
 ### Prerequisites
 
@@ -125,14 +125,14 @@ to `chrome.*` APIs and the DOM — which is also why the test suite can cover
 ### Install and verify
 
 ```bash
-git clone https://github.com/akundu0/coffee-chat-crm.git
-cd coffee-chat-crm
+git clone https://github.com/akundu0/coffee_chat_crm.git
+cd coffee_chat_crm
 npm install
 npm run lint      # ESLint over src/ and tests/
 npm test          # Jest, with a coverage report printed to the terminal
 npm run build:icons   # (re)generates icons/*.png — already committed, but reproducible
 ```
-</details>
+
 ### Manual verification in Chrome
 
 The unit tests cover the logic layer, but loading the extension is the only
@@ -200,7 +200,7 @@ badge at the top of this README reflects the latest run on `main`.
 ## Project structure
 
 ```
-coffee-chat-crm/
+coffee_chat_crm/
 ├── manifest.json              # MV3 extension manifest
 ├── src/
 │   ├── lib/                   # Pure logic - unit tested, no chrome.* calls
