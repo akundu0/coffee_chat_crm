@@ -64,8 +64,6 @@ user-authorized OAuth token.
 | --- | --- |
 | ![Popup icon](icons/icon128.png) | Injected next to the open thread header |
 
-*(Swap this section for real screenshots once you've loaded the extension —
-see [Manual verification](#manual-verification-in-chrome) below.)*
 
 ## Architecture
 
